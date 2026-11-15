@@ -2,21 +2,34 @@
 
 _Status: draft v1, 15 Nov 2026. UK sole trader, based in Cambridge. **This is not legal or tax advice.** Items marked ⚖️ need a professional to check them or need confirming on the official GOV.UK, HMRC or ICO page._
 
-## 1. Business name: 5 options
+## 1. Business name: final 3 (revised 15 Nov 2026)
 
-Each name needs to pass a simple test: **can you say it once over the noise of a busy bar and have the owner remember it?**
+I brainstormed about 30 names and ran a quick web search on the strongest. Each name had to:
+- be easy to say once over the noise of a busy bar and still be remembered,
+- mean something to hospitality people,
+- not clash with an existing web or hospitality brand.
 
-| # | Name | Idea | Strengths | Risks to check |
-|---|---|---|---|---|
-| 1 | **Housemade** ⭐ | "House-made", as on a menu: made here, made properly | Warm, a word owners already use, easy to spell, works as a wordmark | Food brands may use it. Check trademarks in web-design classes (35 and 42). |
-| 2 | **Mise** | From *mise en place*: everything in its place | Short, chef-y, memorable once explained | People may not know how to say it ("meez"). Restaurant software may already use it. |
-| 3 | **Open Today** | Your site always says, correctly, that you're open | Says what we do, friendly | Long domain. Sounds generic. |
-| 4 | **Corner Table** | The best table in a small independent place | Local and independent feel | Restaurants may already use the name. Two words. |
-| 5 | **The Pass** | Where dishes get checked before they go out, like our quality check | Insider credibility with chefs | Hard to search for. Means little to people outside kitchens. |
+| | **Running Tab** | **Housemade** | **Walk-In** |
+|---|---|---|---|
+| The idea | Your website on a running tab: a small monthly amount, no big bill | "House-made", as on a menu: made here, made properly | Walk-ins welcome: no booking, no contract, no fuss. It also brings customers through the door. |
+| Tagline | "Put your website on the tab." | "Websites for independent venues. Made in Cambridge." | "Websites for venues. Walk-ins welcome." |
+| How it sounds in the pitch | "We're Running Tab: your website on a monthly tab, £49." It explains the business model in two words. | "I'm from Housemade. We build and run websites for independents like you." | "I'm from Walk-In. Funny, because I literally just walked in." A built-in opener for door-to-door sales. |
+| Strengths | Very memorable, slightly cheeky, says it's a subscription without the word "subscription" | Warm, a bit premium, works beyond food (guesthouses, bakeries) and outside Cambridge | Fits how you'll sell, friendly, short |
+| Risks | "Tab" can suggest a bill that keeps growing. Copy needs to keep it positive: "small, fixed, cancel any time." | Safer but less distinctive, and it doesn't hint at the monthly model | Spelling: walk-in, walkin or walk in? Walk-in fridge jokes. A common word, so harder to rank for on Google. |
+| Quick conflict search | No web or hospitality brand found | No web or hospitality brand found | No web or hospitality brand found |
+| Domains to try | `runningtab.co.uk`, `runningtab.studio`, `runningtabsites.co.uk` | `housemade.studio`, `housemadesites.co.uk`, `gethousemade.co.uk` | `walkin.studio`, `walkinsites.co.uk`, `walkinwebsites.co.uk` |
+| **Score** (memorable, meaning, low risk; out of 15) | **13** | **12** | **10** |
 
-**Recommendation: Housemade**, written as "Housemade" and pronounced as it reads. Tagline: _"Websites for independent venues. Made in Cambridge."_
+**Recommendation: Running Tab.** With no marketing budget and no audience, being remembered after a 2-minute chat counts most, and Running Tab explains the offer before you do. Housemade is the safe runner-up.
 
-**Domains to try, in order:** `housemade.studio`, `housemadesites.co.uk`, `housemade.site`, `gethousemade.co.uk`. A `.co.uk` builds the most local trust. `.studio` looks good on a van or a business card. Budget about £10–£30 a year and **check renewal prices**, because some extensions are cheap only in the first year.
+**Rejected after searching:**
+- **Yes Chef**: a website agency called Yes Chef Studio already exists.
+- **Covers**: a hospitality branding and web studio called Covers already exists.
+- **Mise**: "Mise Studio" already builds restaurant websites, and there's restaurant software called Mise.
+- **Open Tab**: too close to OpenTable, which risks confusion or a complaint.
+- **The Pass, Corner Table, Open Today, Front Door, Chalkboard**: too generic, or already used by many restaurants.
+
+_These were quick web searches, not legal clearance. Run the checks below before buying anything._
 
 ### Checks to run before committing
 
@@ -93,7 +106,7 @@ The rule is that the agent must be able to read and write every tool, so we pref
 
 **Recurring costs I'm adding:** Claude Pro at about £18 a month. Everything else stays on free tiers until there's revenue. Insurance (about £15 a month) and the ICO fee (about £52 a year) are business costs rather than tools. All of these are in `ops/pricing-model.csv`. **Total: about £48 a month.**
 
-## 4. Brand kit: Housemade
+## 4. Brand kit (works for any of the 3 names; logo direction written for Housemade, adjust once chosen)
 
 ### Personality
 Like a good front-of-house manager: **warm, quick, plain-spoken and reliable**. It knows the trade, never shows off, and has a touch of kitchen humour.
