@@ -1,0 +1,20 @@
+---
+import { plans } from '../config';
+---
+<div class="plans">
+  {plans.map((p) => (
+    <article class={`plan${p.featured ? ' featured' : ''}`} id={p.id}>
+      {p.featured && <span class="badge">Most venues pick this</span>}
+      <h3>{p.name}</h3>
+      <p class="muted" style="margin:0">{p.blurb}</p>
+      <p class="price">£{p.price}<small> / month</small></p>
+      <p class="muted" style="margin:0;font-size:.9rem">No setup fee · No VAT · 3-month minimum</p>
+      <ul>{p.features.map((f) => <li>{f}</li>)}</ul>
+      <div class="actions">
+        <a class={`btn ${p.featured ? 'btn-primary' : 'btn-secondary'}`} href={`/contact?plan=${p.id}`}>Book a free chat</a>
+        {p.stripeLink && <a class="btn btn-sage" href={p.stripeLink} rel="noopener">Ready? Sign up for {p.name}</a>}
+      </div>
+      {p.stripeLink && <p class="fine">You won’t be charged until your site is live and you’re happy with it.</p>}
+    </article>
+  ))}
+</div>

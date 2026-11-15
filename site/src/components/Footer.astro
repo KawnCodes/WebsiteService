@@ -1,0 +1,36 @@
+---
+import Logo from './Logo.astro';
+import { business, nav, whatsappLink } from '../config';
+const wa = whatsappLink();
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/"><Logo size={30} /></a>
+        <p style="margin-top:14px;max-width:36ch">Websites for independent cafés, pubs and restaurants. Made in Cambridge, on a monthly tab.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href={`mailto:${business.email}`}>{business.email}</a></li>
+          {wa && <li><a href={wa}>WhatsApp us</a></li>}
+          {business.portalUrl && <li><a href={business.portalUrl}>Client billing portal</a></li>}
+          <li>Serving {business.area}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <p>© {year} {business.legalLine}. {business.address}. Not VAT registered.</p>
+      <p><a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></p>
+    </div>
+  </div>
+</footer>

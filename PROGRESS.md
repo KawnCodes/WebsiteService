@@ -13,7 +13,7 @@
 | 2026-11-15 | Goals cut to 75% of the original (£2,250 / £3,750 MRR). Strategy: lower price, more volume. Provisional core price £49/month (no VAT, 3-month minimum); founding venues £29/month. |
 | 2026-11-15 | Founder approved £49 core price with a 3-month minimum. Draft tiers: Core £49 / Plus £79 / Group £129. |
 | 2026-11-15 | Tiers approved (revisit after validation). Plus includes same-day changes 7 days a week. Site files are free whenever a client leaves. |
-| 2026-11-15 | Recommended name: **Housemade** (subject to checks). Recommended stack: Cloudflare + GitHub + Stripe + WhatsApp Business. |
+| 2026-11-15 | Name chosen: **Running Tab** (domain and trademark checks still to run). Earlier recommendation was Housemade. Recommended stack: Cloudflare + GitHub + Stripe + WhatsApp Business. |
 
 ## Phase 1: Concept & validation (`docs/01-concept.md`)
 - [x] 3 niches scored, with a recommendation
@@ -33,15 +33,19 @@
 
 ## Phase 3: Brand & business setup
 - [x] `docs/03-setup.md`: 5 names and checks, UK legal and admin checklist, tool stack, brand kit
-- [ ] Founder picks a name and runs the checks (domain, Companies House, trademarks, social handles)
+- [x] Founder picks a name: Running Tab
+- [ ] Founder runs the name checks (domain, Companies House, trademarks, social handles)
 - [ ] Register with HMRC, open a bank account, ICO fee, Stripe, insurance quotes
 
 ## Phase 4: Agency website (`/site`)
-- [ ] Stack chosen and justified; runs with one command
-- [ ] Pages: Home, How it works, Pricing, Portfolio, FAQ, Contact, Terms, Privacy
-- [ ] Stripe Payment Links via `.env`; lead form; analytics; SEO, sitemap and robots.txt
-- [ ] Deploy and domain guide
-- [ ] 2–3 hospitality demo sites in `/site/demos`
+- [x] Stack chosen and justified (Astro, static); runs with one command: `cd site && npm install && npm run dev`
+- [x] Pages: Home, How it works, Pricing, Work, FAQ, Contact, Terms (draft), Privacy (draft), Thanks, 404
+- [x] Stripe Payment Links via `.env` (no secrets); lead form (Web3Forms); cookieless analytics; meta, Open Graph, JSON-LD, sitemap and robots.txt
+- [x] Deploy guide (Cloudflare Pages) and domain guide in `site/README.md`
+- [x] 3 demo sites for fictional venues from one reusable template (`site/demos/*.json`)
+- [x] Build passes; checked at phone and desktop widths with no sideways scrolling
+- [ ] Founder: fill in placeholders (name, address), create Stripe links, Web3Forms key, Cal.com link, then deploy
+- [ ] Solicitor review of Terms and Privacy
 
 ## Phase 5: Delivery system (`/ops/delivery`)
 - [ ] Client site template and 5-day launch process

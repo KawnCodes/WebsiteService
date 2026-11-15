@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+
+const faqs: [string, string][] = [
+  ['How much does it cost?', 'Core is £49 a month, Plus £79 and Group £129. There’s no setup fee and no VAT (we’re not VAT registered). You pay nothing until you’ve approved your finished site.'],
+  ['Is there a contract?', 'There’s a 3-month minimum, then it’s monthly. Cancel with 30 days’ notice by email or WhatsApp. If you’re not happy in the first 30 days after launch, cancel and we’ll refund month 1.'],
+  ['Who owns the website and domain?', 'Your domain is always registered in your name, and your text, menus, photos and logo are always yours. If you leave after the minimum term, we hand over your full site files free, and help point your domain wherever you like.'],
+  ['How quickly do you make changes?', 'On Core, within 1 working day. On Plus, menu, hours and closure changes sent before 3pm are done the same day, 7 days a week, and other changes within 1 working day. Group gets priority, usually within about 4 working hours.'],
+  ['What counts as a change?', 'One request about content on an existing page: a new menu (even the whole thing), prices, hours, photos, an event, a banner, or a text update of up to about 300 words. New pages and features are add-ons.'],
+  ['We already have a website. Can you take it over?', 'Yes. We move over everything worth keeping for free, redesign it, and take over hosting and updates. We’ll help you track down the domain login if nobody knows where it is.'],
+  ['Isn’t Instagram enough?', 'Instagram is great for showing off, but Google, TripAdvisor and booking platforms send people to your website for hours, menus and allergens. A website also works for people who don’t use Instagram. We link the two together.'],
+  ['Why not just use Wix or Squarespace?', 'You can, and it’s cheaper on paper. The catch is that you have to build it and keep it updated yourself. With us, you send a WhatsApp and it’s done.'],
+  ['My nephew / friend does websites…', 'Brilliant, if they’ll still be updating your menu at 4pm on a Friday two years from now. We’re a fixed monthly cost, with turnaround times we commit to and nothing that depends on a favour.'],
+  ['Can you do online ordering or table booking?', 'We connect the booking, ordering or gift-voucher system you already use (or help you choose one), so it sits neatly on your site. We don’t build ordering systems ourselves.'],
+  ['Do you use AI?', 'Yes. We use modern tools, including AI, to build quickly and make changes fast. That’s how we keep prices low. A real person checks everything before it goes live.'],
+  ['Will I show up on Google?', 'We set up everything Google needs to understand your venue: page titles, your menu as real text, opening hours in a format Google reads, and a sitemap. On Plus we also look after your Google Business Profile. Nobody can honestly guarantee rankings, but these basics make a real difference for local searches.'],
+  ['Where are you based?', 'Cambridge. We work with venues in the city and nearby villages, and we’re happy to pop in.'],
+  ['How do I pay?', 'Monthly by card or bank debit through Stripe, once your site is live. You can update your card or cancel from your billing portal at any time.'],
+];
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+};
+---
+<Base title="FAQ" description="Answers to common questions about Running Tab’s website plans for cafés, pubs and restaurants: cost, contracts, ownership, turnaround and more." jsonLd={ld}>
+  <section class="hero" style="padding-bottom:24px">
+    <div class="narrow">
+      <p class="eyebrow">FAQ</p>
+      <h1>Questions, answered</h1>
+      <p class="lead">Can’t find yours? <a href="/contact">Just ask</a>.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:16px">
+    <div class="narrow faq">
+      {faqs.map(([q, a]) => (
+        <details><summary>{q}</summary><div><p>{a}</p></div></details>
+      ))}
+    </div>
+  </section>
+</Base>

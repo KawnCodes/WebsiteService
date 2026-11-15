@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import type { Venue } from '../templates/venue/VenueSite.astro';
+
+const files = import.meta.glob<{ default: Venue }>('../../demos/*.json', { eager: true });
+const demos = Object.values(files).map((m) => m.default);
+---
+<Base title="Our work" description="Example websites for cafés, pubs and restaurants, built by Running Tab in Cambridge.">
+  <section class="hero" style="padding-bottom:24px">
+    <div class="narrow">
+      <p class="eyebrow">Work</p>
+      <h1>Example sites</h1>
+      <p class="lead">We’re new, so here are three demo sites for <strong>fictional</strong> venues, showing what yours could look like. Each one has a real menu page, live open/closed status, opening hours Google can read, and an events or private-hire section.</p>
+    </div>
+  </section>
+  <section class="section" style="padding-top:16px">
+    <div class="container">
+      <div class="grid grid-3">
+        {demos.map((d) => (
+          <a class="card" href={`/demos/${d.slug}`} style="text-decoration:none;color:inherit">
+            <div class="shot" style={`background:${d.theme.bg};color:${d.theme.text};border:1px solid var(--line)`}>
+              <span>{d.name}<br /><small style={`font-family:var(--font-body);font-size:.8rem;color:${d.theme.muted}`}>{d.kind}</small></span>
+            </div>
+            <h3>{d.name}</h3>
+            <p class="muted">{d.kind}: {d.tagline}</p>
+            <p style="color:var(--tomato);font-weight:600;margin:0">View demo site →</p>
+          </a>
+        ))}
+      </div>
+      <h2 style="margin-top:64px">Real venues, coming soon</h2>
+      <p class="muted">Our first founding venues launch this winter. Their before/after stories will go here.</p>
+      <div class="grid grid-3" style="margin-top:20px">
+        {[1, 2, 3].map((n) => (
+          <div class="card">
+            <div class="shot placeholder">Founding venue #{n}<br />Your venue here?</div>
+            <p class="muted">Before/after and a short story from the owner.</p>
+          </div>
+        ))}
+      </div>
+      <div class="btn-row" style="margin-top:32px"><a class="btn btn-primary" href="/contact?plan=founding">Claim a founding spot</a></div>
+    </div>
+  </section>
+</Base>

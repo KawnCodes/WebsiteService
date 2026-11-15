@@ -99,7 +99,7 @@ Niches I considered and rejected:
 ## 4. Positioning and offer
 
 **Positioning statement**
-> For independent cafés, restaurants and pubs around Cambridge whose website is out of date, missing or a pain to change, **[Brand]** is a done-for-you website subscription. It keeps your menu, hours and bookings right, for a flat monthly fee with no upfront cost. Unlike DIY builders, which take your time, or freelancers who disappear after launch, we build it, host it and make your changes within one working day. It's run by someone who has worked in hospitality.
+> For independent cafés, restaurants and pubs around Cambridge whose website is out of date, missing or a pain to change, **Running Tab** is a done-for-you website subscription. It keeps your menu, hours and bookings right, for a flat monthly fee with no upfront cost. Unlike DIY builders, which take your time, or freelancers who disappear after launch, we build it, host it and make your changes within one working day. It's run by someone who has worked in hospitality.
 
 **One-line offer** (price provisional, to be tested in validation and set in Phase 2):
 > "We build and run your venue's website for **£49/month**. No upfront cost, no VAT, no 12-month contract, and menu changes go live within a day."

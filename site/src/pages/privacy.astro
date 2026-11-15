@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import { business } from '../config';
+---
+<Base title="Privacy policy" description="How Running Tab collects, uses and protects personal data.">
+  <section class="section">
+    <div class="narrow prose">
+      <p class="eyebrow">Privacy</p>
+      <h1>Privacy policy</h1>
+      <p class="notice"><strong>Draft, last updated 15 November 2026.</strong> This should be checked against current ICO guidance before it is relied on.</p>
+
+      <h2>Who we are</h2>
+      <p>{business.legalLine} (“Running Tab”, “we”), {business.address}, is the controller for personal data collected through this website and in running our business. Contact: <a href={`mailto:${business.email}`}>{business.email}</a>.</p>
+
+      <h2>What we collect and why</h2>
+      <ul>
+        <li><strong>Enquiries</strong> (name, venue, email, phone, message) when you use our contact form, email or WhatsApp us. We use this to reply and discuss your enquiry. Lawful basis: legitimate interests, or steps before entering a contract.</li>
+        <li><strong>Client details</strong> (contact and billing details, content you send for your site). We use this to provide your website service and to bill you. Lawful basis: contract and legal obligation (tax records).</li>
+        <li><strong>Prospective clients</strong>: we may note publicly available business contact details of venues (for example from Google or their website) to offer our service. You can ask us to stop at any time. Lawful basis: legitimate interests.</li>
+        <li><strong>Website analytics</strong>: we use Cloudflare Web Analytics, which doesn’t use cookies or track you across sites. It gives us anonymous counts of page visits.</li>
+      </ul>
+      <p>We don’t sell personal data, and we don’t use advertising or tracking cookies.</p>
+
+      <h2>Who we share it with (sub-processors)</h2>
+      <ul>
+        <li><strong>Cloudflare</strong>: website hosting, DNS, email forwarding and analytics</li>
+        <li><strong>Stripe</strong>: payments and billing</li>
+        <li><strong>Web3Forms</strong>: delivering contact-form messages to our inbox</li>
+        <li><strong>Anthropic (Claude)</strong>: AI tools we use to draft, build and update websites and to help with admin. We share only what the task needs.</li>
+        <li><strong>GitHub</strong>: storing website code and tracking change requests</li>
+        <li><strong>[Email provider, e.g. Zoho or Google]</strong>: business email</li>
+        <li><strong>WhatsApp (Meta)</strong>: if you choose to message us there</li>
+      </ul>
+      <p>Some of these providers process data outside the UK. Where they do, we rely on appropriate safeguards such as the UK International Data Transfer Addendum or adequacy regulations.</p>
+
+      <h2>How long we keep it</h2>
+      <ul>
+        <li>Enquiries that don’t become clients: up to 12 months after our last contact.</li>
+        <li>Client records: for the length of the service plus 6 years (for tax and legal claims).</li>
+        <li>Form submissions from your website visitors (if we host your site): only as long as needed to deliver them to you.</li>
+      </ul>
+
+      <h2>Your rights</h2>
+      <p>You can ask to access, correct or delete your data, object to or restrict how we use it, or ask for a copy to move elsewhere. Email us and we’ll respond within one month. If you’re unhappy, you can complain to the Information Commissioner’s Office (ico.org.uk).</p>
+
+      <h2>For our clients’ website visitors</h2>
+      <p>If you sent an enquiry through a venue’s website that we host, that venue is the controller of your data and we process it on their behalf. Please contact the venue directly about your data.</p>
+    </div>
+  </section>
+</Base>

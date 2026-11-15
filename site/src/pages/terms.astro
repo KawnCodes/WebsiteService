@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+import { business } from '../config';
+---
+<Base title="Terms of service" description="Running Tab’s terms of service for website subscription plans.">
+  <section class="section">
+    <div class="narrow prose">
+      <p class="eyebrow">Terms</p>
+      <h1>Terms of service</h1>
+      <p class="notice"><strong>Draft, last updated 15 November 2026.</strong> A solicitor should review these before they are relied on.</p>
+
+      <p>These terms apply when a business (“you”) subscribes to a website plan from {business.legalLine} (“Running Tab”, “we”), {business.address}. They are a business-to-business agreement. By ticking the box at checkout, or by confirming your order in writing, you agree to them.</p>
+
+      <h2>1. What we provide</h2>
+      <p>We design, build, host and maintain a website for your venue, as described for your chosen plan (Core, Plus or Group) on our <a href="/pricing">pricing page</a> on the date you subscribed. This includes hosting, SSL, backups, uptime monitoring and the number of change requests in your plan each month.</p>
+
+      <h2>2. Change requests and turnaround</h2>
+      <ul>
+        <li>A change request is one request about content on an existing page that takes up to about 30 minutes to complete. A whole new menu counts as one request.</li>
+        <li>Turnaround times are those listed for your plan. They are measured from when we receive a complete request (with any text or photos needed). “Working days” are Monday to Friday, excluding UK bank holidays.</li>
+        <li>Unused requests don’t carry over. New pages, features, integrations, redesigns and other items listed as add-ons are quoted separately.</li>
+        <li>If we miss a turnaround time, we take £10 off your next monthly payment, no more than once per month.</li>
+      </ul>
+
+      <h2>3. Your responsibilities</h2>
+      <ul>
+        <li>You provide accurate content (menus, prices, allergen information, hours) and confirm you have the right to use any text, logos and photos you send us.</li>
+        <li>You remain responsible for the accuracy of allergen and dietary information. We publish what you give us.</li>
+        <li>You keep control of your domain registration, or allow us to register it in your name (Plus and Group).</li>
+      </ul>
+
+      <h2>4. Fees and payment</h2>
+      <ul>
+        <li>Fees are as shown for your plan when you subscribed. We are not currently VAT registered. If that changes, we will give you at least 60 days’ notice.</li>
+        <li>We don’t charge until you have approved your finished site and it is live. After that, fees are paid monthly (or annually) in advance by card or bank debit through Stripe.</li>
+        <li>Your price is fixed for 12 months from the start date. After that, we will give at least 60 days’ notice of any change.</li>
+        <li>If a payment fails, we will retry it and remind you. If a payment is 21 days overdue we may pause change requests. If it is 45 days overdue, after written notice, we may take the site offline until it is paid. Your domain stays yours throughout.</li>
+      </ul>
+
+      <h2>5. Minimum term, cancellation and our guarantee</h2>
+      <ul>
+        <li>The minimum term is 3 months from launch (6 months for founding-venue pricing). After that, either of us may cancel with 30 days’ written notice (email or WhatsApp is fine).</li>
+        <li>If you cancel during the minimum term, the fees for the remaining months of that term are still due. <strong>The exception</strong>: if you are unhappy and tell us within 30 days of launch, you can cancel, we will refund your first month, and no minimum term applies.</li>
+        <li>We may end the agreement immediately if you seriously breach these terms (for example, using the site for unlawful content).</li>
+      </ul>
+
+      <h2>6. Ownership</h2>
+      <ul>
+        <li>You own your domain name, your content (text, menus, photos, logo) and your trademarks.</li>
+        <li>We own our templates, code and design system, and license them to you for as long as you subscribe.</li>
+        <li>When the agreement ends after the minimum term, or under our 30-day guarantee, and all fees due have been paid, we give you a free copy of your full site files with a licence to keep using them for your venue, and help point your domain elsewhere within 5 working days.</li>
+      </ul>
+
+      <h2>7. Data protection</h2>
+      <p>When your website collects personal data (for example, booking or private-hire enquiries), you are the controller and we act as your processor under UK GDPR. We will:</p>
+      <ul>
+        <li>process that data only on your documented instructions (to run your website and deliver enquiries to you);</li>
+        <li>make sure anyone processing it is bound by confidentiality;</li>
+        <li>use appropriate technical and organisational security measures;</li>
+        <li>use only the sub-processors listed in our <a href="/privacy">privacy policy</a>, tell you before adding new ones, and give you a chance to object;</li>
+        <li>help you respond to requests from individuals and with your own data protection obligations, where reasonable;</li>
+        <li>tell you without undue delay if we become aware of a personal data breach;</li>
+        <li>delete or return the data when the agreement ends, unless the law requires us to keep it; and</li>
+        <li>give you the information you reasonably need to show compliance.</li>
+      </ul>
+
+      <h2>8. Liability</h2>
+      <ul>
+        <li>We will provide the service with reasonable skill and care. We aim for high availability but can’t guarantee your site will never be unavailable, for example because of hosting provider outages.</li>
+        <li>We are not liable for indirect or consequential losses, or for loss of profit, revenue or bookings.</li>
+        <li>Our total liability in any 12-month period is limited to the fees you paid us in the 3 months before the claim.</li>
+        <li>Nothing in these terms limits liability that can’t legally be limited, such as for death or personal injury caused by negligence, or for fraud.</li>
+      </ul>
+
+      <h2>9. General</h2>
+      <p>We may update these terms and will give you 30 days’ notice of any change that affects you. These terms are governed by the law of England and Wales, and the courts of England and Wales have jurisdiction.</p>
+      <p>Questions? Email <a href={`mailto:${business.email}`}>{business.email}</a>.</p>
+    </div>
+  </section>
+</Base>

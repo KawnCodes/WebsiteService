@@ -106,7 +106,7 @@ The rule is that the agent must be able to read and write every tool, so we pref
 
 **Recurring costs I'm adding:** Claude Pro at about £18 a month. Everything else stays on free tiers until there's revenue. Insurance (about £15 a month) and the ICO fee (about £52 a year) are business costs rather than tools. All of these are in `ops/pricing-model.csv`. **Total: about £48 a month.**
 
-## 4. Brand kit (works for any of the 3 names; logo direction written for Housemade, adjust once chosen)
+## 4. Brand kit: Running Tab
 
 ### Personality
 Like a good front-of-house manager: **warm, quick, plain-spoken and reliable**. It knows the trade, never shows off, and has a touch of kitchen humour.
@@ -129,9 +129,10 @@ Every text and background pair below passes WCAG AA contrast (4.5:1 or higher).
 - Sizes: body 17–18px on mobile, headings in a 1.25 ratio scale.
 
 ### Logo direction
-- **A lowercase wordmark, "housemade."**, in Fraunces 700, in ink, ending in a small tomato-coloured full stop.
-- **Mark and favicon:** a rounded tomato square with a cream lowercase "h". The arch of the "h" hints at a roof or a serving hatch.
-- Don't use a stock "web design" cursor, or a chef's hat clip-art. The agent will produce SVG versions in Phase 4. Get a designer to polish it later if you want.
+- **A lowercase wordmark, "running tab."**, in Fraunces 700, in ink, ending in a small tomato-coloured full stop.
+- **Mark and favicon:** a tomato rounded square containing a cream **bar-tab receipt** with a zigzag torn edge and three lines.
+- The SVG version is in `site/public/favicon.svg` and `site/src/components/Logo.astro`. Get a designer to polish it later if you want.
+- Don't use a stock "web design" cursor, chef's-hat clip-art, or beer glasses.
 
 ### Tone of voice
 

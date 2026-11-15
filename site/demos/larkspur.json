@@ -1,0 +1,78 @@
+{
+  "slug": "larkspur",
+  "demo": true,
+  "name": "Larkspur",
+  "schemaType": "CafeOrCoffeeShop",
+  "kind": "Café & bakery",
+  "tagline": "Sourdough, good coffee and slow mornings on Mill Road.",
+  "intro": "An independent neighbourhood café baking everything in-house from 6am. Dogs, prams and laptops welcome (until noon at weekends).",
+  "address": { "street": "Mill Road", "locality": "Cambridge", "postcode": "" },
+  "phone": "01632 960 101",
+  "email": "hello@example.com",
+  "instagram": "",
+  "booking": { "label": "Order a celebration cake", "url": "#contact" },
+  "notice": "Christmas hours: closed 25–26 December. Stollen and mince pies to pre-order now.",
+  "theme": {
+    "bg": "#FBF7EE", "surface": "#FFFFFF", "text": "#2A2420", "muted": "#6B5F55",
+    "accent": "#5B7553", "accentText": "#FFFFFF", "highlight": "#F3D9A4", "heading": "serif"
+  },
+  "hours": [
+    { "day": "Monday", "open": "08:00", "close": "16:00" },
+    { "day": "Tuesday", "open": "08:00", "close": "16:00" },
+    { "day": "Wednesday", "open": "08:00", "close": "16:00" },
+    { "day": "Thursday", "open": "08:00", "close": "16:00" },
+    { "day": "Friday", "open": "08:00", "close": "17:00" },
+    { "day": "Saturday", "open": "08:30", "close": "17:00" },
+    { "day": "Sunday", "open": "09:00", "close": "15:00" }
+  ],
+  "menu": [
+    {
+      "section": "Breakfast",
+      "note": "Served until 11:30",
+      "items": [
+        { "name": "Sourdough toast", "desc": "Our country loaf, cultured butter, house jam", "price": "4.50", "tags": ["V"] },
+        { "name": "Eggs on sourdough", "desc": "Fried, poached or scrambled, with chilli butter", "price": "8.50", "tags": ["V"] },
+        { "name": "Mushrooms on toast", "desc": "Garlic & thyme mushrooms, whipped feta, rocket", "price": "9.50", "tags": ["V"] },
+        { "name": "Overnight oats", "desc": "Oat milk, poached rhubarb, toasted seeds", "price": "6.50", "tags": ["VG", "GF"] }
+      ]
+    },
+    {
+      "section": "Lunch",
+      "note": "From 11:30",
+      "items": [
+        { "name": "Soup of the day", "desc": "With bread and butter. Ask what’s on today", "price": "7.50", "tags": ["V"] },
+        { "name": "Toasted focaccia", "desc": "Ham hock, Comté, mustard mayo", "price": "9.00", "tags": [] },
+        { "name": "Seasonal salad", "desc": "Roast squash, lentils, pomegranate, tahini", "price": "10.00", "tags": ["VG", "GF"] }
+      ]
+    },
+    {
+      "section": "Bakery & coffee",
+      "note": "",
+      "items": [
+        { "name": "Cardamom bun", "desc": "Our bestseller. Usually gone by 2pm", "price": "3.80", "tags": ["V"] },
+        { "name": "Almond croissant", "desc": "", "price": "3.90", "tags": ["V"] },
+        { "name": "Flat white", "desc": "Single-origin espresso from a small UK roaster", "price": "3.40", "tags": [] },
+        { "name": "Filter coffee", "desc": "Changes weekly", "price": "3.20", "tags": [] }
+      ]
+    }
+  ],
+  "dietaryNote": "V vegetarian · VG vegan · GF gluten-free ingredients. We bake with flour, nuts and sesame on site. Please tell us about any allergies before ordering.",
+  "about": {
+    "heading": "Baked here, every morning",
+    "body": [
+      "Larkspur started with a sourdough starter and a borrowed oven. Today we bake about 60 loaves a day, plus buns, pastries and whatever’s in season.",
+      "We buy flour from a UK mill and veg from local growers, and we compost our coffee grounds."
+    ]
+  },
+  "events": [
+    { "date": "Every Saturday", "title": "Bread club", "desc": "Pre-order your loaf by Thursday and skip the queue." },
+    { "date": "First Sunday of the month", "title": "Bake-along", "desc": "A small-group sourdough class, 4–6pm. £35 including starter to take home." }
+  ],
+  "privateHire": null,
+  "gallery": ["The counter at 8am", "Cardamom buns", "Window seats", "Bread shelf", "Flat white", "The garden"],
+  "faqs": [
+    { "q": "Can I bring my dog?", "a": "Yes! Water bowls by the door." },
+    { "q": "Do you take bookings?", "a": "We’re walk-in only, except for groups of 6+ on weekdays." },
+    { "q": "Do you have gluten-free options?", "a": "Yes, but our kitchen isn’t gluten-free, so we can’t rule out traces." }
+  ]
+}

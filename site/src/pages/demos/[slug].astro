@@ -1,0 +1,12 @@
+---
+import VenueSite, { type Venue } from '../../templates/venue/VenueSite.astro';
+
+export function getStaticPaths() {
+  const files = import.meta.glob<{ default: Venue }>('../../../demos/*.json', { eager: true });
+  return Object.values(files).map((mod) => ({ params: { slug: mod.default.slug }, props: { venue: mod.default } }));
+}
+
+const { venue } = Astro.props;
+const canonical = new URL(`/demos/${venue.slug}`, Astro.site).href;
+---
+<VenueSite venue={venue} canonical={canonical} noindex />

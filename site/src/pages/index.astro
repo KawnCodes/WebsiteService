@@ -1,0 +1,126 @@
+---
+import Base from '../layouts/Base.astro';
+import PlanCards from '../components/PlanCards.astro';
+import { founding } from '../config';
+---
+<Base title="Websites for Cambridge cafés, pubs and restaurants, £49 a month">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">For independent venues in Cambridge</p>
+        <h1>Put your website <span class="accent">on the tab.</span></h1>
+        <p class="lead">We build, host and look after your venue’s website for a small monthly fee. Text us a new menu and it’s live within a day. No upfront cost, and you’re never locked in.</p>
+        <ul class="points">
+          <li>£49 a month, no VAT, no setup fee</li>
+          <li>Pay nothing until you’ve seen your site and love it</li>
+          <li>Changes done within a working day (same day, 7 days a week, on Plus)</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/contact">Book a free 15-minute chat</a>
+          <a class="btn btn-secondary" href="/pricing">See pricing</a>
+        </div>
+      </div>
+      <div class="receipt" role="img" aria-label="A receipt showing a website plan for £49 a month">
+        <h3>Running Tab</h3>
+        <p class="r-sub">TABLE 1 · YOUR VENUE · MONTHLY</p>
+        <div class="r-line"><span>Website design</span><span>incl.</span></div>
+        <div class="r-line"><span>Hosting &amp; security</span><span>incl.</span></div>
+        <div class="r-line"><span>Menu as a real page</span><span>incl.</span></div>
+        <div class="r-line"><span>Same-day changes</span><span>incl.</span></div>
+        <div class="r-line"><span>Google hours check</span><span>incl.</span></div>
+        <div class="r-line"><span>Upfront cost</span><span>£0.00</span></div>
+        <div class="r-total"><span>TOTAL / MONTH</span><span>£49.00</span></div>
+        <p class="r-note">No VAT · Cancel after 3 months · Thank you!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <p class="eyebrow">Sound familiar?</p>
+      <h2>Your website should be the easiest part of the job</h2>
+      <div class="grid grid-3" style="margin-top:28px">
+        <div class="card"><div class="icon">📄</div><h3>The menu is a PDF from last year</h3><p>Customers squint at it on their phones, and Google can’t read it.</p></div>
+        <div class="card"><div class="icon">🕑</div><h3>Google says you’re closed</h3><p>Your hours are different on Google, Instagram and your site, and people turn up to a locked door.</p></div>
+        <div class="card"><div class="icon">👻</div><h3>Whoever built it has vanished</h3><p>You can’t log in, you don’t know who has the domain, and changing one price is a project.</p></div>
+        <div class="card"><div class="icon">📩</div><h3>Private-hire enquiries get lost</h3><p>They’re buried in Instagram DMs between supplier messages and memes.</p></div>
+        <div class="card"><div class="icon">☎️</div><h3>The same questions, all day</h3><p>“Are you open?” “Do you do gluten-free?” “Can I bring my dog?” A good website answers these for you.</p></div>
+        <div class="card"><div class="icon">⏳</div><h3>No time to deal with it</h3><p>You’re running a venue. Fiddling with Wix at 1am shouldn’t be your job.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">How it works</p>
+      <h2>Live in about a week. Changes in a text.</h2>
+      <div class="grid grid-4" style="margin-top:28px">
+        <div><div class="step-num">1</div><h3>Quick chat</h3><p>15 minutes, at your venue or on the phone, at a quiet time that suits you.</p></div>
+        <div><div class="step-num">2</div><h3>Free mockup</h3><p>We send a draft of your homepage within 2 working days. No obligation.</p></div>
+        <div><div class="step-num">3</div><h3>We build it</h3><p>Your full site in about 5 working days. You approve it, then you pay.</p></div>
+        <div><div class="step-num">4</div><h3>Text us changes</h3><p>New menu? Closed on Monday? Send a WhatsApp and it’s done.</p></div>
+      </div>
+      <p style="margin-top:24px"><a href="/how-it-works">More on how it works →</a></p>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="center" style="margin-bottom:36px">
+        <p class="eyebrow">Pricing</p>
+        <h2>One small monthly tab. Everything included.</h2>
+        <p class="lead">No setup fee and no VAT. A 3-month minimum, then cancel any time with 30 days’ notice and take your site with you, free.</p>
+      </div>
+      <PlanCards />
+      <div class="banner" style="margin-top:32px">
+        <div>
+          <h3>Founding venues: {founding.spots} spots</h3>
+          <p>£{founding.price} a month for your first {founding.months} months and a free build, in exchange for an honest review and a before/after story.</p>
+        </div>
+        <a class="btn btn-secondary" href="/contact?plan=founding">Claim a founding spot</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Compare</p>
+      <h2>Why not just use Wix, or a freelancer?</h2>
+      <div class="table-wrap" style="margin-top:24px">
+        <table>
+          <thead><tr><th></th><th class="us">Running Tab</th><th>DIY (Wix, Squarespace)</th><th>One-off freelancer</th><th>Typical agency plan</th></tr></thead>
+          <tbody>
+            <tr><td>Upfront cost</td><td class="us yes">£0</td><td>£0</td><td>£500–£2,000+</td><td>£0–£1,000</td></tr>
+            <tr><td>Monthly cost</td><td class="us yes">£49, no VAT</td><td>about £9–£25, plus your time</td><td>Hosting extra</td><td>£49–£149, often + VAT</td></tr>
+            <tr><td>Who makes changes?</td><td class="us yes">We do, within a day</td><td class="no">You</td><td class="no">You pay each time</td><td>Them, often 2–5 days</td></tr>
+            <tr><td>Built for hospitality</td><td class="us yes">Yes</td><td class="no">Generic templates</td><td>Sometimes</td><td>Sometimes</td></tr>
+            <tr><td>Minimum term</td><td class="us yes">3 months</td><td>Monthly or annual</td><td>n/a</td><td>Often 12 months</td></tr>
+            <tr><td>Leave and keep your site</td><td class="us yes">Yes, free</td><td class="no">No</td><td>Usually</td><td class="no">Often not</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="muted" style="margin-top:12px;font-size:.9rem">Competitor prices are typical ranges from public UK pricing pages, checked November 2026. They change, so check them yourself.</p>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="narrow">
+      <p class="eyebrow">Who’s behind it</p>
+      <h2>Made by someone who’s worked a Saturday night service</h2>
+      <p class="lead">I’ve spent years in hospitality, behind the bar and on the floor. I know the menu changes every season, Christmas bookings start in October, and nobody has time to fight with a website.</p>
+      <p>Running Tab is a small Cambridge studio. We use modern tools, including AI, to build fast and make changes quickly. A real person checks everything before it goes live, and you’ll always have a local number to call.</p>
+      <p><strong>{'[Your first name]'}</strong>, founder</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container center">
+      <h2>Let’s get your website off your to-do list</h2>
+      <p class="lead">A 15-minute chat, a free homepage mockup, and no obligation.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a class="btn btn-primary" href="/contact">Book a free chat</a>
+        <a class="btn btn-secondary" href="/portfolio">See example sites</a>
+      </div>
+    </div>
+  </section>
+</Base>

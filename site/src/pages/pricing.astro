@@ -1,0 +1,72 @@
+---
+import Base from '../layouts/Base.astro';
+import PlanCards from '../components/PlanCards.astro';
+import { addons, founding, plans } from '../config';
+const offers = plans.map((p) => ({
+  '@type': 'Offer',
+  name: `${p.name} plan`,
+  price: p.price,
+  priceCurrency: 'GBP',
+  description: p.blurb,
+}));
+---
+<Base
+  title="Pricing"
+  description="Simple monthly website plans for Cambridge venues: Core £49, Plus £79, Group £129. No setup fee, no VAT, and a 3-month minimum."
+  jsonLd={{ '@context': 'https://schema.org', '@type': 'Service', name: 'Website subscription for hospitality venues', provider: { '@type': 'ProfessionalService', name: 'Running Tab' }, areaServed: 'Cambridge', offers }}
+>
+  <section class="hero" style="padding-bottom:32px">
+    <div class="container center">
+      <p class="eyebrow">Pricing</p>
+      <h1>Simple monthly plans. No surprises.</h1>
+      <p class="lead">No setup fee and no VAT. Pay nothing until you’ve approved your finished site. A 3-month minimum, then cancel any time with 30 days’ notice.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:16px">
+    <div class="container">
+      <PlanCards />
+      <p class="center muted" style="margin-top:20px">Pay for a year upfront and get 2 months free (Core: £490 a year).</p>
+      <div class="banner" style="margin-top:32px">
+        <div>
+          <h3>Founding venues: {founding.spots} spots</h3>
+          <p>A free build and £{founding.price} a month for {founding.months} months, then Core at £49. In return: an honest review, and permission to share your before/after. A 6-month minimum.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-secondary" href="/contact?plan=founding">Claim a spot</a>
+          {founding.stripeLink && <a class="btn btn-primary" href={founding.stripeLink}>Sign up as a founding venue</a>}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container grid grid-2" style="align-items:start;gap:40px">
+      <div>
+        <h2>Our promises</h2>
+        <div class="card" style="margin-bottom:16px"><h3>Pay nothing until you love it</h3><p>No payment until you’ve approved the finished site and it’s live.</p></div>
+        <div class="card" style="margin-bottom:16px"><h3>Your first 30 days are risk-free</h3><p>Not happy in the first 30 days after launch? Cancel, we refund month 1, and the minimum term doesn’t apply.</p></div>
+        <div class="card" style="margin-bottom:16px"><h3>On time, or money off</h3><p>If we miss a turnaround time, your next month is £10 cheaper (once per month).</p></div>
+        <div class="card"><h3>Never locked in</h3><p>Your domain and content are always yours. Leave after the minimum term and we hand over your full site files, free.</p></div>
+      </div>
+      <div>
+        <h2>Add-ons</h2>
+        <p class="muted">One-off prices, only if you want them.</p>
+        <div class="table-wrap">
+          <table style="min-width:0">
+            <tbody>{addons.map(([name, price]) => <tr><td>{name}</td><td style="white-space:nowrap;font-weight:600">{price}</td></tr>)}</tbody>
+          </table>
+        </div>
+        <p class="muted" style="margin-top:12px;font-size:.9rem">Moving content from your old website is free. For photography we can recommend a local photographer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="narrow">
+      <h2>What’s not included</h2>
+      <p>To keep the price low, these are add-ons or handled by specialists: online shops and ordering systems (we connect your existing provider), logo design from scratch, photography, email accounts, social media management, paid ads, and fixes inside third-party systems like your booking platform or till.</p>
+      <p>Full details are in our <a href="/terms">terms</a>. Any questions? <a href="/contact">Ask us</a>.</p>
+    </div>
+  </section>
+</Base>

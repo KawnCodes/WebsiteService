@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import LeadForm from '../components/LeadForm.astro';
+import { business, whatsappLink } from '../config';
+const wa = whatsappLink();
+const externalBooking = business.bookingUrl.startsWith('http');
+---
+<Base title="Book a free chat" description="Book a free 15-minute chat about a website for your café, pub or restaurant in Cambridge. We’ll send a free homepage mockup within 2 working days.">
+  <section class="hero" style="padding-bottom:24px">
+    <div class="narrow">
+      <p class="eyebrow">Contact</p>
+      <h1>Book a free 15-minute chat</h1>
+      <p class="lead">Tell us about your venue and we’ll send a free homepage mockup within 2 working days. No obligation, no pushy follow-ups.</p>
+      <div class="btn-row">
+        {externalBooking && <a class="btn btn-primary" href={business.bookingUrl} rel="noopener">Pick a time</a>}
+        {wa && <a class="btn btn-sage" href={wa} rel="noopener">WhatsApp us</a>}
+        <a class="btn btn-secondary" href={`mailto:${business.email}`}>Email {business.email}</a>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:24px">
+    <div class="narrow">
+      <div class="card">
+        <h2 style="font-size:1.5rem">Or send us a message</h2>
+        <LeadForm />
+      </div>
+    </div>
+  </section>
+</Base>

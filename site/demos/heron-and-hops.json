@@ -1,0 +1,82 @@
+{
+  "slug": "heron-and-hops",
+  "demo": true,
+  "name": "The Heron & Hops",
+  "schemaType": "BarOrPub",
+  "kind": "Riverside pub & kitchen",
+  "tagline": "Proper pints, Sunday roasts and a beer garden by the river.",
+  "intro": "A freehouse with six rotating cask ales, a log fire in winter, and a kitchen cooking pub classics with care.",
+  "address": { "street": "Chesterton", "locality": "Cambridge", "postcode": "" },
+  "phone": "01632 960 202",
+  "email": "hello@example.com",
+  "instagram": "",
+  "booking": { "label": "Book a table", "url": "#book" },
+  "notice": "Now booking Christmas parties. Set menu from £32 a head.",
+  "theme": {
+    "bg": "#F4F1EA", "surface": "#FFFFFF", "text": "#1C2420", "muted": "#58625C",
+    "accent": "#1F4D3A", "accentText": "#FFFFFF", "highlight": "#D9B26F", "heading": "serif"
+  },
+  "hours": [
+    { "day": "Monday", "open": "", "close": "" },
+    { "day": "Tuesday", "open": "16:00", "close": "23:00" },
+    { "day": "Wednesday", "open": "12:00", "close": "23:00" },
+    { "day": "Thursday", "open": "12:00", "close": "23:00" },
+    { "day": "Friday", "open": "12:00", "close": "23:59" },
+    { "day": "Saturday", "open": "12:00", "close": "23:59" },
+    { "day": "Sunday", "open": "12:00", "close": "21:00" }
+  ],
+  "menu": [
+    {
+      "section": "Small plates",
+      "note": "",
+      "items": [
+        { "name": "Scotch egg", "desc": "Free-range egg, pork & sage, piccalilli", "price": "7.50", "tags": [] },
+        { "name": "Crispy whitebait", "desc": "Lemon & caper mayo", "price": "7.00", "tags": [] },
+        { "name": "Burrata", "desc": "Roast beetroot, hazelnut, sourdough", "price": "9.00", "tags": ["V"] }
+      ]
+    },
+    {
+      "section": "Mains",
+      "note": "Served Wed–Sat 12–3 & 5:30–9",
+      "items": [
+        { "name": "Beer-battered haddock", "desc": "Triple-cooked chips, mushy peas, tartare", "price": "17.50", "tags": [] },
+        { "name": "Heron burger", "desc": "Aged beef, smoked cheddar, bacon jam, fries", "price": "16.50", "tags": [] },
+        { "name": "Pie of the week", "desc": "Mash, greens, proper gravy", "price": "17.00", "tags": [] },
+        { "name": "Squash & sage risotto", "desc": "Toasted seeds, crispy sage", "price": "15.00", "tags": ["VG", "GF"] }
+      ]
+    },
+    {
+      "section": "Sunday roasts",
+      "note": "Sundays 12–6. Booking recommended",
+      "items": [
+        { "name": "Roast sirloin of beef", "desc": "Yorkshire pudding, roasties, seasonal veg", "price": "22.00", "tags": [] },
+        { "name": "Half roast chicken", "desc": "Sage & onion stuffing, bread sauce", "price": "19.50", "tags": [] },
+        { "name": "Nut roast", "desc": "All the trimmings, vegan gravy", "price": "17.00", "tags": ["VG"] }
+      ]
+    }
+  ],
+  "dietaryNote": "V vegetarian · VG vegan · GF gluten-free ingredients. Full allergen information is available from the bar. Please ask before ordering.",
+  "about": {
+    "heading": "A proper local, done properly",
+    "body": [
+      "The Heron has been a pub since the 1800s. We took it on to keep it what it should be: somewhere you can bring your parents, your dog or your five-a-side team.",
+      "Six cask lines rotate weekly, with at least two from Cambridgeshire breweries."
+    ]
+  },
+  "events": [
+    { "date": "Every Tuesday, 8pm", "title": "Quiz night", "desc": "£2 a head, teams of up to 6. Bar tab for the winners." },
+    { "date": "Last Friday of the month", "title": "Folk session", "desc": "Bring an instrument or just a pint." },
+    { "date": "Fri 11 December", "title": "Christmas jumper party", "desc": "Free mulled wine for the best (worst) jumper." }
+  ],
+  "privateHire": {
+    "heading": "Private hire: the Boathouse Room",
+    "body": "Our upstairs room seats 30 or holds 50 standing, with its own bar and river views. It’s ideal for birthdays, wakes, work dos and christenings. There’s no hire fee from Sunday to Thursday, with a minimum spend at weekends.",
+    "capacity": "Up to 30 seated / 50 standing"
+  },
+  "gallery": ["The bar", "Log fire", "Sunday roast", "Beer garden", "Cask lines", "Boathouse Room"],
+  "faqs": [
+    { "q": "Are dogs welcome?", "a": "In the bar and garden, yes. Not in the dining room." },
+    { "q": "Do you show sport?", "a": "Six Nations and major tournaments only, with the sound low." },
+    { "q": "Is there parking?", "a": "A small car park, plus cycle racks out front." }
+  ]
+}

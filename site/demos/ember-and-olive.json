@@ -1,0 +1,78 @@
+{
+  "slug": "ember-and-olive",
+  "demo": true,
+  "name": "Ember & Olive",
+  "schemaType": "Restaurant",
+  "kind": "Mediterranean small plates",
+  "tagline": "Wood-fired small plates and natural wine in the heart of Cambridge.",
+  "intro": "A 40-cover restaurant built around a wood-fired grill. The menu changes with the seasons and is made for sharing.",
+  "address": { "street": "Regent Street", "locality": "Cambridge", "postcode": "" },
+  "phone": "01632 960 303",
+  "email": "hello@example.com",
+  "instagram": "",
+  "booking": { "label": "Reserve a table", "url": "#book" },
+  "notice": "",
+  "theme": {
+    "bg": "#1A1614", "surface": "#24201D", "text": "#F3ECE4", "muted": "#B9AEA2",
+    "accent": "#E07A4F", "accentText": "#1A1614", "highlight": "#9DB17C", "heading": "serif"
+  },
+  "hours": [
+    { "day": "Monday", "open": "", "close": "" },
+    { "day": "Tuesday", "open": "", "close": "" },
+    { "day": "Wednesday", "open": "17:30", "close": "22:30" },
+    { "day": "Thursday", "open": "17:30", "close": "22:30" },
+    { "day": "Friday", "open": "12:00", "close": "23:00" },
+    { "day": "Saturday", "open": "12:00", "close": "23:00" },
+    { "day": "Sunday", "open": "12:00", "close": "17:00" }
+  ],
+  "menu": [
+    {
+      "section": "To start",
+      "note": "",
+      "items": [
+        { "name": "Grilled flatbread", "desc": "Whipped garlic butter, za’atar", "price": "5.00", "tags": ["V"] },
+        { "name": "Gordal olives", "desc": "Orange, fennel, chilli", "price": "4.50", "tags": ["VG", "GF"] },
+        { "name": "Labneh", "desc": "Burnt honey, pistachio, dukkah", "price": "7.00", "tags": ["V", "GF"] }
+      ]
+    },
+    {
+      "section": "From the fire",
+      "note": "We suggest 2–3 plates per person",
+      "items": [
+        { "name": "Lamb chops", "desc": "Salsa verde, charred lemon", "price": "15.00", "tags": ["GF"] },
+        { "name": "Octopus", "desc": "Smoked paprika, potato, aioli", "price": "14.00", "tags": ["GF"] },
+        { "name": "Hispi cabbage", "desc": "Miso butter, crispy shallots", "price": "9.00", "tags": ["V"] },
+        { "name": "Chicken thighs", "desc": "Harissa, yoghurt, pickled onion", "price": "12.00", "tags": ["GF"] }
+      ]
+    },
+    {
+      "section": "Sweet",
+      "note": "",
+      "items": [
+        { "name": "Basque cheesecake", "desc": "Poached quince", "price": "7.50", "tags": ["V"] },
+        { "name": "Olive oil cake", "desc": "Blood orange, crème fraîche", "price": "7.00", "tags": ["V"] }
+      ]
+    }
+  ],
+  "dietaryNote": "V vegetarian · VG vegan · GF gluten-free ingredients. Our kitchen handles all 14 major allergens. Please tell your server about any allergies.",
+  "about": {
+    "heading": "Cooked over fire, made to share",
+    "body": [
+      "Everything on the menu passes through the grill, from the bread to the cabbage to the quince for dessert.",
+      "Our list of low-intervention wines comes mostly from small European growers, with a few English bottles we love."
+    ]
+  },
+  "events": [
+    { "date": "Monthly", "title": "Winemaker dinners", "desc": "Five courses paired with one grower’s wines. £65 a head." }
+  ],
+  "privateHire": {
+    "heading": "Private dining & exclusive hire",
+    "body": "Book the chef’s table for up to 10, or the whole restaurant for up to 40. We’ll build a sharing menu around your event.",
+    "capacity": "Chef’s table up to 10 / exclusive hire up to 40"
+  },
+  "gallery": ["The grill", "Small plates", "Chef’s table", "Wine wall", "Dining room", "Octopus"],
+  "faqs": [
+    { "q": "Do you take walk-ins?", "a": "We keep a few seats at the counter for walk-ins every night." },
+    { "q": "Is there a service charge?", "a": "An optional 12.5% service charge goes entirely to the team." }
+  ]
+}

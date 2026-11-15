@@ -1,0 +1,47 @@
+---
+import { business, plans } from '../config';
+const site = Astro.site ?? new URL('https://runningtab.co.uk');
+const redirect = new URL('/thanks', site).href;
+const hasKey = Boolean(business.formAccessKey);
+---
+{hasKey ? (
+  <form class="form" action="https://api.web3forms.com/submit" method="POST" id="lead-form">
+    <input type="hidden" name="access_key" value={business.formAccessKey} />
+    <input type="hidden" name="subject" value="New lead from runningtab website" />
+    <input type="hidden" name="from_name" value="Running Tab website" />
+    <input type="hidden" name="redirect" value={redirect} />
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    <div class="row">
+      <label>Your name<input name="name" required autocomplete="name" /></label>
+      <label>Venue name<input name="venue" required autocomplete="organization" /></label>
+    </div>
+    <div class="row">
+      <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+      <label>Phone or WhatsApp<input type="tel" name="phone" autocomplete="tel" /></label>
+    </div>
+    <div class="row">
+      <label>Current website (if any)<input name="current_website" placeholder="Or your Instagram" /></label>
+      <label>Plan you’re interested in
+        <select name="plan" id="plan-select">
+          <option value="not-sure">Not sure yet</option>
+          {plans.map((p) => <option value={p.id}>{p.name} (£{p.price}/mo)</option>)}
+          <option value="founding">Founding venue (£29/mo)</option>
+        </select>
+      </label>
+    </div>
+    <label>Anything we should know?<textarea name="message" rows="4" placeholder="e.g. Our menu changes weekly and our website still shows last summer’s"></textarea></label>
+    <label class="check"><input type="checkbox" name="consent" value="yes" required /> <span>I’m happy for Running Tab to contact me about my enquiry. See our <a href="/privacy">privacy policy</a>.</span></label>
+    <div><button class="btn btn-primary" type="submit">Send. We’ll reply within 1 working day.</button></div>
+  </form>
+) : (
+  <div class="notice">
+    <p><strong>The form isn’t connected yet.</strong> In the meantime, email <a href={`mailto:${business.email}?subject=Website%20for%20my%20venue`}>{business.email}</a> with your venue name and the best time to chat.</p>
+    <p style="margin:0" class="muted">(Site owner: add PUBLIC_FORM_ACCESS_KEY to .env to switch the form on. See site/README.md.)</p>
+  </div>
+)}
+<script>
+  const params = new URLSearchParams(location.search);
+  const plan = params.get('plan');
+  const sel = document.getElementById('plan-select') as HTMLSelectElement | null;
+  if (plan && sel && [...sel.options].some((o) => o.value === plan)) sel.value = plan;
+</script>
