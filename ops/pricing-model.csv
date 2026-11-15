@@ -18,9 +18,10 @@ Agency site hosting,0,£,Cloudflare Pages free tier
 Email,0,£,Cloudflare Email Routing to Gmail (free)
 Uptime monitoring,0,£,UptimeRobot free tier (50 monitors); verify
 Professional indemnity insurance,15,£,Get quotes once the first client signs; verify
+ICO data protection fee,4.33,£,Tier 1 is about £52/yr; check whether you are exempt at ico.org.uk
 Printing & marketing,10,£,"Health-check printouts, business cards"
 Accounting / invoicing,0,£,Stripe invoices + free spreadsheet to start
-Fixed costs excluding AI,=SUM(B16:B22),£,
+Fixed costs excluding AI,=SUM(B16:B23),£,
 AI agent: Claude Pro,18,£,About $20 incl. VAT; billed in USD; verify
 AI agent: Claude Max 5x,90,£,About $100 + VAT; verify
 Upgrade to Max at active clients,25,clients,Assumption: when Pro limits start slowing delivery
@@ -33,34 +34,34 @@ Per-client contingency (£/mo),1,1,2
 Human hours per client per month,0.5,0.75,1.5
 
 4. PER-TIER UNIT ECONOMICS (formulas),Core,Plus,Group
-Stripe fees (£),=B29*($B$5+$B$7)+$B$6,=C29*($B$5+$B$7)+$B$6,=D29*($B$5+$B$7)+$B$6
-Total variable cost (£),=B36+B31+B32,=C36+C31+C32,=D36+D31+D32
-Gross margin per client (£),=B29-B37,=C29-C37,=D29-D37
-Gross margin %,=B38/B29,=C38/C29,=D38/D29
-Margin per human hour (£),=B38/B33,=C38/C33,=D38/D33
-Mix check (must be 100%),=SUM(B30:D30)
+Stripe fees (£),=B30*($B$5+$B$7)+$B$6,=C30*($B$5+$B$7)+$B$6,=D30*($B$5+$B$7)+$B$6
+Total variable cost (£),=B37+B32+B33,=C37+C32+C33,=D37+D32+D33
+Gross margin per client (£),=B30-B38,=C30-C38,=D30-D38
+Gross margin %,=B39/B30,=C39/C30,=D39/D30
+Margin per human hour (£),=B39/B34,=C39/C34,=D39/D34
+Mix check (must be 100%),=SUM(B31:D31)
 
 5. BLENDED & TARGETS (formulas),Value,Unit,
-Blended revenue per client (ARPU),"=SUMPRODUCT(B29:D29,B30:D30)+$B$9",£
-Blended variable cost per client,"=SUMPRODUCT(B37:D37,B30:D30)",£
-Blended human hours per client,"=SUMPRODUCT(B33:D33,B30:D30)",hours/month
-Clients needed for month-6 target,"=ROUNDUP($B$11/$B$44,0)",clients
-Clients needed for month-12 target,"=ROUNDUP($B$12/$B$44,0)",clients
-Profit at month-6 target,"=$B$47*($B$44-$B$45)-$B$23-IF($B$47>=$B$26,$B$25,$B$24)",£ before tax
-Profit at month-12 target,"=$B$48*($B$44-$B$45)-$B$23-IF($B$48>=$B$26,$B$25,$B$24)",£ before tax
-Human hours/week servicing month-12 clients,=$B$48*$B$46*12/52,hours/week,Excludes sales time
-Break-even clients (covers all fixed costs),"=ROUNDUP(($B$23+$B$24)/($B$44-$B$45),0)",clients
+Blended revenue per client (ARPU),"=SUMPRODUCT(B30:D30,B31:D31)+$B$9",£
+Blended variable cost per client,"=SUMPRODUCT(B38:D38,B31:D31)",£
+Blended human hours per client,"=SUMPRODUCT(B34:D34,B31:D31)",hours/month
+Clients needed for month-6 target,"=ROUNDUP($B$11/$B$45,0)",clients
+Clients needed for month-12 target,"=ROUNDUP($B$12/$B$45,0)",clients
+Profit at month-6 target,"=$B$48*($B$45-$B$46)-$B$24-IF($B$48>=$B$27,$B$26,$B$25)",£ before tax
+Profit at month-12 target,"=$B$49*($B$45-$B$46)-$B$24-IF($B$49>=$B$27,$B$26,$B$25)",£ before tax
+Human hours/week servicing month-12 clients,=$B$49*$B$47*12/52,hours/week,Excludes sales time
+Break-even clients (covers all fixed costs),"=ROUNDUP(($B$24+$B$25)/($B$45-$B$46),0)",clients
 
 6. 12-MONTH PROJECTION,New clients (INPUT),Churned,Active clients,Founding active (INPUT),MRR (£),Variable costs (£),Fixed costs (£),Profit (£),Human hrs/week,Target MRR (£),On track?
-Dec 2026,2,=0,=0+B55-C55,2,=(D55-E55)*$B$44+E55*$B$10,=D55*$B$45,"=$B$23+IF(D55>=$B$26,$B$25,$B$24)",=F55-G55-H55,=D55*$B$46*12/52+B55*$B$13/4.33,,
-Jan 2027,5,=D55*$B$8,=D55+B56-C56,5,=(D56-E56)*$B$44+E56*$B$10,=D56*$B$45,"=$B$23+IF(D56>=$B$26,$B$25,$B$24)",=F56-G56-H56,=D56*$B$46*12/52+B56*$B$13/4.33,,
-Feb 2027,7,=D56*$B$8,=D56+B57-C57,5,=(D57-E57)*$B$44+E57*$B$10,=D57*$B$45,"=$B$23+IF(D57>=$B$26,$B$25,$B$24)",=F57-G57-H57,=D57*$B$46*12/52+B57*$B$13/4.33,,
-Mar 2027,8,=D57*$B$8,=D57+B58-C58,5,=(D58-E58)*$B$44+E58*$B$10,=D58*$B$45,"=$B$23+IF(D58>=$B$26,$B$25,$B$24)",=F58-G58-H58,=D58*$B$46*12/52+B58*$B$13/4.33,,
-Apr 2027,9,=D58*$B$8,=D58+B59-C59,5,=(D59-E59)*$B$44+E59*$B$10,=D59*$B$45,"=$B$23+IF(D59>=$B$26,$B$25,$B$24)",=F59-G59-H59,=D59*$B$46*12/52+B59*$B$13/4.33,,
-May 2027,9,=D59*$B$8,=D59+B60-C60,5,=(D60-E60)*$B$44+E60*$B$10,=D60*$B$45,"=$B$23+IF(D60>=$B$26,$B$25,$B$24)",=F60-G60-H60,=D60*$B$46*12/52+B60*$B$13/4.33,=$B$11,"=IF(F60>=K60,""YES"",""NO"")"
-Jun 2027,5,=D60*$B$8,=D60+B61-C61,3,=(D61-E61)*$B$44+E61*$B$10,=D61*$B$45,"=$B$23+IF(D61>=$B$26,$B$25,$B$24)",=F61-G61-H61,=D61*$B$46*12/52+B61*$B$13/4.33,,
-Jul 2027,5,=D61*$B$8,=D61+B62-C62,0,=(D62-E62)*$B$44+E62*$B$10,=D62*$B$45,"=$B$23+IF(D62>=$B$26,$B$25,$B$24)",=F62-G62-H62,=D62*$B$46*12/52+B62*$B$13/4.33,,
-Aug 2027,5,=D62*$B$8,=D62+B63-C63,0,=(D63-E63)*$B$44+E63*$B$10,=D63*$B$45,"=$B$23+IF(D63>=$B$26,$B$25,$B$24)",=F63-G63-H63,=D63*$B$46*12/52+B63*$B$13/4.33,,
-Sep 2027,5,=D63*$B$8,=D63+B64-C64,0,=(D64-E64)*$B$44+E64*$B$10,=D64*$B$45,"=$B$23+IF(D64>=$B$26,$B$25,$B$24)",=F64-G64-H64,=D64*$B$46*12/52+B64*$B$13/4.33,,
-Oct 2027,5,=D64*$B$8,=D64+B65-C65,0,=(D65-E65)*$B$44+E65*$B$10,=D65*$B$45,"=$B$23+IF(D65>=$B$26,$B$25,$B$24)",=F65-G65-H65,=D65*$B$46*12/52+B65*$B$13/4.33,,
-Nov 2027,5,=D65*$B$8,=D65+B66-C66,0,=(D66-E66)*$B$44+E66*$B$10,=D66*$B$45,"=$B$23+IF(D66>=$B$26,$B$25,$B$24)",=F66-G66-H66,=D66*$B$46*12/52+B66*$B$13/4.33,=$B$12,"=IF(F66>=K66,""YES"",""NO"")"
+Dec 2026,2,=0,=0+B56-C56,2,=(D56-E56)*$B$45+E56*$B$10,=D56*$B$46,"=$B$24+IF(D56>=$B$27,$B$26,$B$25)",=F56-G56-H56,=D56*$B$47*12/52+B56*$B$13/4.33,,
+Jan 2027,5,=D56*$B$8,=D56+B57-C57,5,=(D57-E57)*$B$45+E57*$B$10,=D57*$B$46,"=$B$24+IF(D57>=$B$27,$B$26,$B$25)",=F57-G57-H57,=D57*$B$47*12/52+B57*$B$13/4.33,,
+Feb 2027,7,=D57*$B$8,=D57+B58-C58,5,=(D58-E58)*$B$45+E58*$B$10,=D58*$B$46,"=$B$24+IF(D58>=$B$27,$B$26,$B$25)",=F58-G58-H58,=D58*$B$47*12/52+B58*$B$13/4.33,,
+Mar 2027,8,=D58*$B$8,=D58+B59-C59,5,=(D59-E59)*$B$45+E59*$B$10,=D59*$B$46,"=$B$24+IF(D59>=$B$27,$B$26,$B$25)",=F59-G59-H59,=D59*$B$47*12/52+B59*$B$13/4.33,,
+Apr 2027,9,=D59*$B$8,=D59+B60-C60,5,=(D60-E60)*$B$45+E60*$B$10,=D60*$B$46,"=$B$24+IF(D60>=$B$27,$B$26,$B$25)",=F60-G60-H60,=D60*$B$47*12/52+B60*$B$13/4.33,,
+May 2027,9,=D60*$B$8,=D60+B61-C61,5,=(D61-E61)*$B$45+E61*$B$10,=D61*$B$46,"=$B$24+IF(D61>=$B$27,$B$26,$B$25)",=F61-G61-H61,=D61*$B$47*12/52+B61*$B$13/4.33,=$B$11,"=IF(F61>=K61,""YES"",""NO"")"
+Jun 2027,5,=D61*$B$8,=D61+B62-C62,3,=(D62-E62)*$B$45+E62*$B$10,=D62*$B$46,"=$B$24+IF(D62>=$B$27,$B$26,$B$25)",=F62-G62-H62,=D62*$B$47*12/52+B62*$B$13/4.33,,
+Jul 2027,5,=D62*$B$8,=D62+B63-C63,0,=(D63-E63)*$B$45+E63*$B$10,=D63*$B$46,"=$B$24+IF(D63>=$B$27,$B$26,$B$25)",=F63-G63-H63,=D63*$B$47*12/52+B63*$B$13/4.33,,
+Aug 2027,5,=D63*$B$8,=D63+B64-C64,0,=(D64-E64)*$B$45+E64*$B$10,=D64*$B$46,"=$B$24+IF(D64>=$B$27,$B$26,$B$25)",=F64-G64-H64,=D64*$B$47*12/52+B64*$B$13/4.33,,
+Sep 2027,5,=D64*$B$8,=D64+B65-C65,0,=(D65-E65)*$B$45+E65*$B$10,=D65*$B$46,"=$B$24+IF(D65>=$B$27,$B$26,$B$25)",=F65-G65-H65,=D65*$B$47*12/52+B65*$B$13/4.33,,
+Oct 2027,5,=D65*$B$8,=D65+B66-C66,0,=(D66-E66)*$B$45+E66*$B$10,=D66*$B$46,"=$B$24+IF(D66>=$B$27,$B$26,$B$25)",=F66-G66-H66,=D66*$B$47*12/52+B66*$B$13/4.33,,
+Nov 2027,5,=D66*$B$8,=D66+B67-C67,0,=(D67-E67)*$B$45+E67*$B$10,=D67*$B$46,"=$B$24+IF(D67>=$B$27,$B$26,$B$25)",=F67-G67-H67,=D67*$B$47*12/52+B67*$B$13/4.33,=$B$12,"=IF(F67>=K67,""YES"",""NO"")"

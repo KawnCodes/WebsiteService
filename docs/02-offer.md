@@ -69,10 +69,7 @@ Moving content over from their old website is **free** as part of the build.
 - **Minimum term:** 3 months, or 6 months for founding venues. If a venue cancels during it, the remaining months are still due. **This sets up the 30-day exception in §4:** in the first 30 days after launch they can leave and get month 1 refunded.
 - **After the minimum term:** monthly, with 30 days' notice by email or WhatsApp.
 - **Always the client's:** their domain, which is always registered in their name, plus their text, menus, photos and logo. They can take these with them at any time.
-- **The site itself (design and code):** we license it to them while they subscribe. When they leave:
-  - After **12 months or more** of subscription: they get a **free copy of their full site files**, ready to host anywhere.
-  - Before 12 months: they can buy the site files for **£99**, or get just their content for free.
-  - Either way, we help point their domain wherever they want within 5 working days.
+- **The site itself (design and code):** we license it to them while they subscribe. When they leave after the minimum term, **they take a free copy of their full site files**, ready to host anywhere, and we help point their domain wherever they want within 5 working days. _Decided 15 Nov 2026: free at any point, to build trust and make "you're never locked in" part of the sales pitch._
 - **Non-payment:** Stripe retries automatically.
   - At 7 days late we send a friendly reminder.
   - At 21 days late, edits pause.
@@ -100,8 +97,9 @@ Moving content over from their old website is **free** as part of the build.
 | AI agent: Claude Max 5x | about £90 | Fixed, from about 25 clients |
 | Insurance (professional indemnity) | about £15 | Fixed, from the first client |
 | Agency domain, printing, marketing | about £11 | Fixed |
+| ICO data protection fee (about £52 a year) | about £4.33 | Fixed |
 
-**Total fixed costs at the start: about £44 a month**, within the £50 budget. The upfront spend is about £10 for the agency domain plus about £10 for printing, which leaves most of the £100 spare.
+**Total fixed costs at the start: about £48 a month**, just inside the £50 budget. The upfront spend is about £10 for the agency domain, £10 for printing and £52 for the ICO fee, about £72 of the £100.
 
 ## 6. Unit economics (from `ops/pricing-model.csv`)
 
@@ -116,8 +114,8 @@ Moving content over from their old website is **free** as part of the build.
 
 | Goal | Clients needed | Profit before tax and NI | Human hours a week to look after them |
 |---|---|---|---|
-| £2,250 MRR (May 2027) | **35** | about £2,040 | about 5 |
-| £3,750 MRR (Nov 2027) | **59** | about £3,520 | about 8 (plus sales time) |
+| £2,250 MRR (May 2027) | **35** | about £2,035 | about 5 |
+| £3,750 MRR (Nov 2027) | **59** | about £3,512 | about 8 (plus sales time) |
 
 **Sample 12-month plan** (in the CSV; change the "New clients" column to your actual numbers):
 
@@ -130,7 +128,7 @@ Moving content over from their old website is **free** as part of the build.
 **Honest read:**
 - **This plan only works if you sell steadily from January to May: about 8–9 new venues a month.** After that, about 5 a month holds the line.
 - **The 70/25/5 mix is a guess.** If everyone picks Core, the average falls to about £53 and you need about 43 clients for May. Plus is the plan to steer busy venues towards. Its events and private-hire page with an enquiry form is the easiest upsell to justify: one private-hire booking pays for the year.
-- **3% monthly churn is optimistic for hospitality.** The minimum term, the monthly report and the free content export keep it honest. Replace it with real numbers after 6 months.
+- **3% monthly churn is optimistic for hospitality.** The minimum term and the monthly report help keep clients. Free site files when a client leaves make leaving easier, but make the sale easier too. Replace it with real numbers after 6 months.
 
 ## 7. Things to verify
 
@@ -140,8 +138,8 @@ Moving content over from their old website is **free** as part of the build.
 - The VAT registration threshold (currently £90,000 a year according to the sources I found). We're nowhere near it, but confirm with HMRC.
 - Whether Cloudflare's free tiers (Pages, Email Routing, Web Analytics) still cover this use.
 
-## 8. Decisions for the founder
+## 8. Decisions (15 Nov 2026)
 
-1. Are the plan names and prices right: Core £49, Plus £79, Group £129?
-2. Ownership: are you happy with free site files after 12 months and £99 before? The friendlier alternative is "free whenever you leave", which builds trust but makes it easier to leave.
-3. Should Plus offer 7-day same-day turnaround? It's a strong promise for hospitality, and the agent makes it affordable, but you're the one approving changes at weekends.
+- Plans approved: Core £49, Plus £79, Group £129. We'll revisit after validation.
+- Site files are free whenever a client leaves after the minimum term.
+- Plus includes same-day changes, 7 days a week, for menu, hours and closures sent before 3pm.
