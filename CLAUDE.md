@@ -1,6 +1,6 @@
 # Running Tab: operating notes for the AI agent
 
-Running Tab is a website-subscription business for independent cafés, pubs and restaurants in Cambridge, UK. The founder handles sales, approvals and client relationships. You (the agent) do the delivery and admin work. Start with `PROGRESS.md`.
+Running Tab is a website-subscription business for independent cafés, pubs and restaurants in Cambridge, UK. The founder handles sales, approvals and client relationships. You (the agent) do the delivery and admin work. Start with `MONDAY.md` and `PROGRESS.md`.
 
 ## Ground rules
 - **Nothing reaches a client or a prospect without founder approval.** That means messages, emails and outreach. You draft them, and the founder sends them. The exception is routine edits that the founder has marked as pre-approved.
@@ -21,4 +21,5 @@ Running Tab is a website-subscription business for independent cafés, pubs and 
 - **Edit request:** follow `ops/delivery/edits/edit-workflow.md`, logging it in `edit-log.csv` and as a GitHub issue.
 - **Allowance and turnaround report:** `python3 ops/delivery/scripts/allowance.py [YYYY-MM]`
 - **Leads:** `python3 ops/outreach/score_leads.py`, and check `ops/outreach/do-not-contact.csv` before drafting any outreach. Channel rules are in `docs/06-acquisition.md` §3.
+- **KPIs and the Monday summary:** `python3 ops/kpi.py --md` (see `MONDAY.md` for the weekly routine)
 - **Check the agency site builds:** `cd site && npm run build`

@@ -69,12 +69,13 @@
 - [ ] Founder: run `fsa_leads.py` on your laptop, or build the first 40 leads by walking the area
 
 ## Phase 7: Launch, metrics & scaling (`docs/07-scale.md`)
-- [ ] Launch checklist and first-5-clients sprint
-- [ ] KPI spec and calculator script in `/ops`
-- [ ] Retention playbook
-- [ ] Scaling path and contractor SOPs
+- [x] Launch checklist and "first 5 clients" sprint (16 Nov to about 18 Dec)
+- [x] KPI spec and calculator: `python3 ops/kpi.py [YYYY-MM] [--md]` (tested on synthetic data), with `time-log.csv` and `spend-log.csv`
+- [x] Retention playbook (first 30 days, warning signs, save offers incl. a "pause" plan, upsells, win-back)
+- [x] Scaling path with triggers (price rises, template v2, automation, contractor, sales partner, Plan B, limited company)
+- [x] Contractor handbook and SOP index (`ops/sops/contractor-handbook.md`)
 
 ## Definition of done
-- [ ] Every phase complete
-- [ ] Site builds and runs with one command; deploy documented
-- [ ] A weekly Monday action list to land the first paying subscriber
+- [x] Every phase has its doc or code in the repo and is ticked off above (the founder's own action items are still open)
+- [x] Site builds and runs with one command (`cd site && npm install && npm run dev`); deploy documented in `site/README.md`
+- [x] A weekly Monday action list to land the first paying subscriber: **[`MONDAY.md`](MONDAY.md)**
