@@ -8,7 +8,7 @@
 
 ## Week 1: Mon 16 to Sun 22 Nov · Get set up, start conversations
 
-> Hour-by-hour version: [`plans/week-2026-11-16.md`](plans/week-2026-11-16.md)
+> Hour-by-hour version: [`plans/week-2026-11-16.md`](plans/week-2026-11-16.md) · Walk-in routes: [`plans/routes-2026-11-16.md`](plans/routes-2026-11-16.md)
 
 ### Monday 16 (about 5 hours)
 - [ ] 👤 **Morning (1 hour):** run the name checks in `docs/03-setup.md` §1: domain, Companies House, the UK trademark register (classes 35 and 42), social handles. **Buy the domain** and claim `@runningtab…` on Instagram and TikTok.
