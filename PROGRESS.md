@@ -13,6 +13,7 @@
 | 2026-11-15 | Goals cut to 75% of the original (£2,250 / £3,750 MRR). Strategy: lower price, more volume. Provisional core price £49/month (no VAT, 3-month minimum); founding venues £29/month. |
 | 2026-11-15 | Founder approved £49 core price with a 3-month minimum. Draft tiers: Core £49 / Plus £79 / Group £129. |
 | 2026-11-15 | Tiers approved (revisit after validation). Plus includes same-day changes 7 days a week. Site files are free whenever a client leaves. |
+| 2026-11-15 | Phase 5 defaults: WhatsApp for edit requests; routine hours/closure changes skip founder approval after a client's first 2 weeks; template v2 after the founding venues. |
 | 2026-11-15 | Name chosen: **Running Tab** (domain and trademark checks still to run). Earlier recommendation was Housemade. Recommended stack: Cloudflare + GitHub + Stripe + WhatsApp Business. |
 
 ## Phase 1: Concept & validation (`docs/01-concept.md`)
@@ -57,14 +58,15 @@
 - [ ] Backlog: template v2 with separate /menu, /events, /private-hire pages (the plans promise "pages"; v1 is one page with sections)
 
 ## Phase 6: Go-to-market (`docs/06-acquisition.md`, `/ops/outreach`)
-- [ ] 90-day plan with weekly targets
-- [ ] Lead list method, scoring rubric, `ops/crm.csv`
-- [ ] Email, DM and phone scripts and a 4-touch sequence (PECR-compliant)
-- [ ] Free audit and mockup lead magnet
-- [ ] 30-day short-form content plan
-- [ ] Referrals and partnerships
-- [ ] Sales call script, objections, close and payment flow
-- [ ] Own Google Business Profile and local SEO
+- [x] 90-day plan with weekly targets (16 Nov 2026 to 14 Feb 2027; about 16 clients)
+- [x] Lead sources, lead-scoring rubric, `ops/crm.csv`, `score_leads.py` (tested), `fsa_leads.py` (untested: FSA API blocked here)
+- [x] Walk-in, phone, letter, email (limited companies only) and DM scripts; 4-touch follow-up; PECR/GDPR channel rules; suppression list
+- [x] Free health check and homepage mockup lead magnet (process + template)
+- [x] 30-day short-form content calendar
+- [x] Referrals ("buy a round": a month free each) and partner list
+- [x] Sales call script, objections, close and payment flow
+- [x] Own Google Business Profile and local SEO
+- [ ] Founder: run `fsa_leads.py` on your laptop, or build the first 40 leads by walking the area
 
 ## Phase 7: Launch, metrics & scaling (`docs/07-scale.md`)
 - [ ] Launch checklist and first-5-clients sprint

@@ -1,0 +1,4 @@
+lead_id,venue,type,area,address,postcode,website_url,instagram,phone,email,is_ltd,company_number,independent,site_status,hours_mismatch,no_booking,review_count,events_private_hire,trigger,reachable,best_time,score,tier,stage,source,owner_name,last_touch_date,touch_count,next_action,next_action_date,plan,won_date,lost_reason,notes
+L0001,EXAMPLE Café A (delete me),cafe,Mill Road,,,,@example,,,unknown,,yes,pdf_menu,yes,no,210,no,,yes,Tue-Thu 3pm,65,A,new,walk,,,0,Visit with health check,2026-11-17,,,,
+L0002,EXAMPLE Pub B (delete me),pub,Chesterton,,,https://example.com,,,,yes,00000000,yes,outdated,no,yes,95,yes,new owner (Oct 2026),yes,Mon 3-5pm,76,A,new,fsa,,,0,Visit,2026-11-18,,,,
+L0003,EXAMPLE Chain C (delete me),restaurant,City centre,,,https://example.com,,,,yes,,no,fine,no,no,1200,yes,,yes,,0,C,new,maps,,,0,,,,,,Chain: skip

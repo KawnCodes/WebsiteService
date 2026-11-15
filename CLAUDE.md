@@ -20,4 +20,5 @@ Running Tab is a website-subscription business for independent cafés, pubs and 
 - **New client:** `ops/delivery/scripts/new-client.sh <slug>`, then follow `ops/delivery/launch-sop.md`.
 - **Edit request:** follow `ops/delivery/edits/edit-workflow.md`, logging it in `edit-log.csv` and as a GitHub issue.
 - **Allowance and turnaround report:** `python3 ops/delivery/scripts/allowance.py [YYYY-MM]`
+- **Leads:** `python3 ops/outreach/score_leads.py`, and check `ops/outreach/do-not-contact.csv` before drafting any outreach. Channel rules are in `docs/06-acquisition.md` §3.
 - **Check the agency site builds:** `cd site && npm run build`
