@@ -11,6 +11,7 @@
 | 2026-11-15 | Operating model: the agent handles delivery and admin, and the human handles sales, approvals and video. |
 | 2026-11-15 | Niche **approved**: independent food & drink (Plan B: guest accommodation). |
 | 2026-11-15 | Goals cut to 75% of the original (£2,250 / £3,750 MRR). Strategy: lower price, more volume. Provisional core price £49/month (no VAT, 3-month minimum); founding venues £29/month. |
+| 2026-11-15 | Founder approved £49 core price with a 3-month minimum. Draft tiers: Core £49 / Plus £79 / Group £129. |
 
 ## Phase 1: Concept & validation (`docs/01-concept.md`)
 - [x] 3 niches scored, with a recommendation
@@ -24,8 +25,9 @@
 - [ ] Go or no-go recorded
 
 ## Phase 2: Offer, pricing & unit economics
-- [ ] `docs/02-offer.md`: 3 tiers, scope rules, cancellation and ownership, guarantee
-- [ ] `ops/pricing-model.csv` with formulas (including AI agent running costs)
+- [x] `docs/02-offer.md`: 3 tiers, scope rules, cancellation and ownership, guarantee
+- [x] `ops/pricing-model.csv` with formulas (including AI agent running costs), checked by recalculating in LibreOffice
+- [ ] Founder approves tier names and prices, ownership terms, and 7-day turnaround on Plus
 
 ## Phase 3: Brand & business setup
 - [ ] `docs/03-setup.md`: 5 names and checks, UK legal and admin checklist, tool stack, brand kit
