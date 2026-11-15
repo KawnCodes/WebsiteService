@@ -2,14 +2,15 @@
 
 **Business:** a website-as-a-subscription service for independent hospitality venues in Cambridge, UK.
 **Operating model:** the AI agent does the work, and the founder owns the relationships.
-**Goals:** £3k MRR by May 2027, £5k MRR by Nov 2027. Budget: £100 upfront, £50/month.
+**Goals (revised):** £2,250 MRR by May 2027, £3,750 MRR by Nov 2027. Budget: £100 upfront, £50/month.
 
 ## Decisions log
 | Date | Decision |
 |---|---|
 | 2026-11-15 | Location: Cambridge, UK. Brand to be chosen in Phase 3. Separate repo `WebsiteService`. |
 | 2026-11-15 | Operating model: the agent handles delivery and admin, and the human handles sales, approvals and video. |
-| 2026-11-15 | Recommended niche: independent food & drink (Plan B: guest accommodation). **Awaiting founder approval.** |
+| 2026-11-15 | Niche **approved**: independent food & drink (Plan B: guest accommodation). |
+| 2026-11-15 | Goals cut to 75% of the original (£2,250 / £3,750 MRR). Strategy: lower price, more volume. Provisional core price £49/month (no VAT, 3-month minimum); founding venues £29/month. |
 
 ## Phase 1: Concept & validation (`docs/01-concept.md`)
 - [x] 3 niches scored, with a recommendation
@@ -17,7 +18,8 @@
 - [x] Positioning statement and one-line offer (price provisional)
 - [x] Competitor scan template (`ops/competitor-scan.csv`)
 - [x] 14-day validation plan and script (`ops/validation-log.csv`)
-- [ ] Founder approves the niche and provisional offer
+- [x] Founder approves the niche and provisional offer
+- [x] Market price check (in `docs/01-concept.md` §4)
 - [ ] Validation run: 10 conversations logged
 - [ ] Go or no-go recorded
 

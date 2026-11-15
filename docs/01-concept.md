@@ -11,7 +11,7 @@ _Status: draft v1, written 15 Nov 2026. Changes depending on what the validation
 | Audience | No followers | Sales will come from walking in and from outbound messages, not from content, at first. Content builds up in the background. |
 | Time | 30+ hours a week | Plenty. The constraint is sales conversations, not hours of building. |
 | Budget | £100 upfront, £50 a month | Free tiers everywhere. The first real costs are a domain and printing. |
-| Goal | £3k/month by month 6 (May 2027), £5k/month by month 12 (Nov 2027) | We read this as **monthly recurring revenue (MRR)**. Take-home pay is lower after tools and tax. See the sanity check in §5. |
+| Goal | **Revised 15 Nov:** £2,250/month by month 6 (May 2027), £3,750/month by month 12 (Nov 2027). That is 75% of the original £3k/£5k. | Read as **monthly recurring revenue (MRR)**. Take-home pay is lower after tools and tax. The founder prefers a lower price and more clients. See §5. |
 | Operating model | The AI agent does the work, you own the relationships | See §1. |
 
 ## 1. Operating model: the agent does the work, you own the relationships
@@ -102,24 +102,43 @@ Niches I considered and rejected:
 > For independent cafés, restaurants and pubs around Cambridge whose website is out of date, missing or a pain to change, **[Brand]** is a done-for-you website subscription. It keeps your menu, hours and bookings right, for a flat monthly fee with no upfront cost. Unlike DIY builders, which take your time, or freelancers who disappear after launch, we build it, host it and make your changes within one working day. It's run by someone who has worked in hospitality.
 
 **One-line offer** (price provisional, to be tested in validation and set in Phase 2):
-> "We build and run your venue's website for **£79/month**. No upfront cost, and menu changes go live within a day."
+> "We build and run your venue's website for **£49/month**. No upfront cost, no VAT, no 12-month contract, and menu changes go live within a day."
+
+### Market price check (15 Nov 2026, from vendor pages; verify before relying on these)
+
+| Competitor type | Typical monthly price | Usual terms |
+|---|---|---|
+| UK pay-monthly agencies (generalist) | Budget end £29–£35. Most are around £49–£99. Top end £149. Often **+VAT**. | Often a 12-month minimum term |
+| Hospitality-specific UK agencies | £19 (bare, booking extra), £49, £85, £99 | Often a 12-month minimum term; some charge a separate build fee |
+| Maintenance-only care plans | £25–£100, typically £30–£80 | The client still has to pay for the build |
+| DIY: Wix and Squarespace | About £9–£25 for a usable plan | The owner does all the work |
+
+**Where we sit at £49:**
+- Below the middle of the hospitality-specific range (£49–£99).
+- Equal to the cheapest full-service hospitality offer we found, but with no VAT on top (we're below the VAT registration threshold; verify the current figure with HMRC) and a much shorter minimum term.
+- In practice, the main competitor is DIY at £9–£25 plus the owner's own time.
+
+**Honest note:** for a venue owner, risk usually matters more than £10 a month. "No upfront cost, cancel after 3 months, a person who answers the phone" persuades more than a lower price does. So we compete on **low risk and speed** at a fair price, not by being the cheapest.
 
 **Hooks to test:**
 - "Text us a photo of your new menu. It's live by tonight."
 - "One private-hire booking pays for a year."
 - "Your Google hours and your website, finally saying the same thing."
 
-## 5. Sanity check on the income goal
+## 5. Sanity check on the income goal (revised targets)
 
-These figures are rough. Full unit economics come in Phase 2.
+Revised targets: **£2,250 MRR by May 2027** and **£3,750 MRR by Nov 2027**.
 
-| Average price per client | Clients for £3k MRR | Clients for £5k MRR |
+| Average price per client | Clients for £2,250 | Clients for £3,750 |
 |---|---|---|
-| £79 | 38 | 64 |
-| £99 | 31 | 51 |
-| £129 | 24 | 39 |
+| £45 | 50 | 84 |
+| £55 (likely mix if the core plan is £49) | 41 | 68 |
+| £65 | 35 | 58 |
 
-**Honest read:** £3k by month 6 means signing about **5–7 clients a month from month 2** and keeping them. That's ambitious but realistic with steady in-person selling, which is why price testing (§6) and add-ons (Phase 2) matter. With churn, £5k by month 12 probably needs an average of about £110 or more, or a second segment (Plan B, guest accommodation). The agent-run delivery is what makes 40–60 clients manageable for one person.
+**Honest read:** a lower price makes each sale easier, but it means more sales.
+- At about £55 average, we need around **8 new clients a month from January**, plus making up for any who cancel. The bottleneck is sales conversations, not delivery, because the agent handles the build work.
+- Add-ons (online menus, booking setup, Google Business Profile management, photography days) and a higher tier for multi-site or events-heavy venues pull the average up without raising the entry price.
+- Phase 2 models this properly.
 
 ## 6. Validation plan: 10 real conversations in 14 days
 
@@ -128,17 +147,17 @@ These figures are rough. Full unit economics come in Phase 2.
 **Success criteria (decided now, so we can't fudge them later):**
 - ≥ 10 conversations with a decision-maker (owner or GM), not junior staff.
 - ≥ 6 of 10 confirm a specific, recent website pain without being prompted.
-- ≥ 3 of 10 say a monthly price of £79 or more is reasonable.
+- ≥ 4 of 10 say £49/month is reasonable or an easy yes.
 - ≥ 2 **founding-venue commitments**: they sign a one-page founding agreement *and* send their logo and menu. A verbal "sounds good" doesn't count.
 
 **If we fall short:**
 - Fewer than 3 confirm the pain: switch to Plan B (guest accommodation) and repeat the 14 days.
-- The pain is real but the price is rejected: test £49–£59 with tighter scope.
+- The pain is real but £49 is rejected: test £29–£39 with tighter scope, or a lower price on an annual plan.
 - No commitments at all: rework the offer before building the site.
 
 **Founding-venue offer** (5 places):
 - We build the site for free.
-- **£49/month for the first 6 months**, then the standard price, with a 6-month minimum term.
+- **£29/month for the first 6 months**, then the standard price, with a 6-month minimum term.
 - In return: a testimonial, a short before/after case study, and permission to film it for content.
 - No payment until the site goes live, which removes the risk for them.
 
@@ -177,11 +196,11 @@ The rule is to ask about **what has actually happened**, not what they think the
 6. "What do you pay for it now, including the domain and any booking tools?"
 7. "If the website just stayed right without you thinking about it, what would that be worth to you?"
 
-**Price test** (rotate between £59, £79 and £99 across conversations and record which one you used):
+**Price test** (rotate between £39, £49 and £59 across conversations and record which one you used):
 > "What I do is build the site, host it, and make any change you text me within a day, for £[X] a month, with no upfront cost. Does that sound like an easy yes, reasonable, or too much?"
 
 **Close for a founding venue** (only if they confirmed the pain):
-> "I'm taking on five founding venues at £49 a month for the first six months, in exchange for a testimonial. You don't pay anything until you've seen the site and you're happy with it. Can I mock up your homepage this week?"
+> "I'm taking on five founding venues at £29 a month for the first six months, in exchange for a testimonial. You don't pay anything until you've seen the site and you're happy with it. Can I mock up your homepage this week?"
 
 **After every conversation**, record a 60-second voice memo covering: who they are, the pain in their words, the price reaction, the objection, and the next step. Send it to the agent to log.
 
