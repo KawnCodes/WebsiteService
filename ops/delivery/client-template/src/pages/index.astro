@@ -1,0 +1,6 @@
+---
+import VenueSite from '../templates/venue/VenueSite.astro';
+import venue from '../../venue.json';
+const canonical = new URL('/', Astro.site).href;
+---
+<VenueSite venue={venue as any} canonical={canonical} />

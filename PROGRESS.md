@@ -48,11 +48,13 @@
 - [ ] Solicitor review of Terms and Privacy
 
 ## Phase 5: Delivery system (`/ops/delivery`)
-- [ ] Client site template and 5-day launch process
-- [ ] Onboarding: welcome email, intake questionnaire, kickoff checklist
-- [ ] Edit request workflow and allowance tracking
-- [ ] Monthly maintenance checklist and report template
-- [ ] Offboarding process
+- [x] Client site template (`ops/delivery/client-template/` + `scripts/new-client.sh`, tested: generates and builds) and 5-day launch SOP with QA checklist
+- [x] Onboarding: welcome email, intake questionnaire, kickoff checklist
+- [x] Edit request workflow, turnaround standards, message templates; `clients.csv` + `edit-log.csv` + `allowance.py` (allowance, missed turnarounds, £10 credits)
+- [x] Monthly maintenance checklist, seasonal nudges, and report templates (Core one-liner; Plus and Group report)
+- [x] Offboarding process (free site files, domain handover, data deletion)
+- [x] `CLAUDE.md` operating rules for the agent
+- [ ] Backlog: template v2 with separate /menu, /events, /private-hire pages (the plans promise "pages"; v1 is one page with sections)
 
 ## Phase 6: Go-to-market (`docs/06-acquisition.md`, `/ops/outreach`)
 - [ ] 90-day plan with weekly targets

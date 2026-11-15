@@ -29,7 +29,8 @@ export interface Venue {
   about: { heading: string; body: string[] };
   events?: { date: string; title: string; desc: string }[];
   privateHire?: { heading: string; body: string; capacity?: string } | null;
-  gallery?: string[];
+  // A gallery item is either a placeholder label, or a photo: { src: '/images/x.jpg', alt: 'Description' }
+  gallery?: (string | { src: string; alt: string })[];
   faqs?: { q: string; a: string }[];
 }
 
@@ -153,8 +154,10 @@ const hoursJson = JSON.stringify(v.hours);
           {v.about.body.map((p) => <p>{p}</p>)}
         </div>
         {v.gallery?.length ? (
-          <div class="v-gallery" aria-label="Photo gallery (placeholders)">
-            {v.gallery.map((g, i) => <div class={`v-tile t${i % 3}`}><span>{g}</span></div>)}
+          <div class="v-gallery" aria-label="Photo gallery">
+            {v.gallery.map((g, i) => typeof g === 'string'
+              ? <div class={`v-tile t${i % 3}`}><span>{g}</span></div>
+              : <img class="v-photo" src={g.src} alt={g.alt} loading="lazy" decoding="async" width="400" height="400" />)}
           </div>
         ) : null}
       </div>
@@ -304,6 +307,7 @@ const hoursJson = JSON.stringify(v.hours);
   .v-tile.t0 { background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 50%, #000)); }
   .v-tile.t1 { background: linear-gradient(135deg, var(--hl), color-mix(in srgb, var(--hl) 50%, #000)); }
   .v-tile.t2 { background: linear-gradient(135deg, var(--muted), color-mix(in srgb, var(--muted) 40%, #000)); }
+  .v-photo { aspect-ratio: 1; width: 100%; height: auto; object-fit: cover; border-radius: 10px; }
   .v-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
   .v-card { background: var(--surface); border: 1px solid color-mix(in srgb, var(--text) 10%, transparent); border-radius: 14px; padding: 22px; }
   .v-alt .v-card { background: var(--bg); }

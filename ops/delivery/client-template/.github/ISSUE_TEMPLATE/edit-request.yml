@@ -1,0 +1,34 @@
+name: Edit request
+description: One change request from the client (one request = one issue)
+title: "[Edit] "
+labels: ["edit-request"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options: [menu, hours, closure, event, photos, text, banner, other]
+    validations: { required: true }
+  - type: input
+    id: received
+    attributes:
+      label: Received at (date and time, UK)
+      placeholder: "2026-12-04 14:20"
+    validations: { required: true }
+  - type: input
+    id: channel
+    attributes:
+      label: Channel
+      placeholder: WhatsApp / email / form
+  - type: textarea
+    id: request
+    attributes:
+      label: What the client asked for (paste their exact words)
+    validations: { required: true }
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: Content on an existing page, about 30 minutes or less (counts as 1 request)
+        - label: Out of scope, so quote it as an add-on instead
