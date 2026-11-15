@@ -1,0 +1,2 @@
+name,type,url,hospitality_focus,setup_fee_gbp,monthly_gbp,min_term_months,cancel_fee,pages_included,edits_per_month,edit_turnaround,hosting_included,domain_included,booking_integration,who_owns_site,who_owns_domain,pagespeed_mobile_sample,review_rating,top_praise,top_complaint,acquisition_channel,checked_date,verified_by_human
+EXAMPLE (delete me),uk-subscription-agency,https://example.com,no,0,99,12,remaining months,5,unlimited small,48h,yes,no,no,agency,client,62,4.6,fast,locked in,google ads,2026-11-16,no

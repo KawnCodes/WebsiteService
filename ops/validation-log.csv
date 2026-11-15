@@ -1,0 +1,2 @@
+id,venue,type,area,website_url,instagram,has_site,mobile_ok,menu_current,hours_match_google,booking_link,health_score_0_10,visited_date,spoke_to,role,decision_maker,pain_confirmed,pain_quote,current_cost_gbp,price_tested_gbp,price_reaction,objection,next_step,next_step_date,founding_committed,notes
+1,EXAMPLE Café (delete me),cafe,Mill Road,https://example.com,@example,yes,no,no,no,no,3,2026-11-18,Sam,owner,yes,yes,"""Haven't touched it since we opened""",120,79,reasonable,"""Need to ask my partner""",Mockup Thursday,2026-11-20,no,Christmas menu still not online
