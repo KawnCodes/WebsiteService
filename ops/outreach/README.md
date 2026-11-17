@@ -7,6 +7,7 @@ The strategy and the 90-day plan are in `docs/06-acquisition.md`.
 | `scripts.md` | Walk-in, phone, letter, the 4-touch follow-up, the cold email sequence (limited companies only), DMs |
 | `sales-call.md` | The 15-minute call, objection handling, closing and payment |
 | `health-check-template.md` | The free one-page Website Health Check you leave at a venue |
+| `health-check-print.html` | Blank, printable A4 version to fill in by hand (open it in a browser and print) |
 | `content-calendar.csv` | 30 days of short-form video ideas, with hooks |
 | `do-not-contact.csv` | The suppression list. **Check it before every touch.** |
 | `score_leads.py` | Score and tier the leads in `ops/crm.csv`, and print the A-list |
