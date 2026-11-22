@@ -6,6 +6,8 @@
 
 ---
 
+> **This week (23–29 Nov):** reset plan in [`plans/week-2026-11-23.md`](plans/week-2026-11-23.md)
+
 ## Week 1: Mon 16 to Sun 22 Nov · Get set up, start conversations
 
 > Hour-by-hour version: [`plans/week-2026-11-16.md`](plans/week-2026-11-16.md) · Walk-in routes: [`plans/routes-2026-11-16.md`](plans/routes-2026-11-16.md)

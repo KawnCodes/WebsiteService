@@ -1,7 +1,1 @@
 request_id,client_id,received_at,type,channel,summary,counts,status,done_at,issue_url
-E0001,example-cafe,2026-12-03 10:15,menu,whatsapp,New winter menu (photo of board),yes,done,2026-12-03 16:40,
-E0002,example-cafe,2026-12-04 18:30,hours,whatsapp,Closed 24-26 Dec banner,yes,done,2026-12-07 11:00,
-E0003,example-pub,2026-12-05 13:10,menu,email,Sunday roast prices up £1,yes,done,2026-12-05 15:30,
-E0004,example-pub,2026-12-06 16:45,closure,whatsapp,Closed tomorrow for private event,yes,done,2026-12-07 09:10,
-E0005,example-pub,2026-12-07 09:00,other,email,Add a new Careers page,no,declined,,Quoted as add-on £39
-E0006,example-cafe,2026-12-08 11:00,photos,whatsapp,Swap 3 gallery photos,yes,open,,

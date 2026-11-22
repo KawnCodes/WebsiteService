@@ -1,3 +1,1 @@
 client_id,venue,plan,status,launch_date,min_term_end,monthly_price,contact_name,contact_email,contact_phone,repo,domain,stripe_customer_id,last_report_sent,cancelled_date,cancel_reason,notes
-example-cafe,EXAMPLE Café (delete me),core,live,2026-12-01,2027-03-01,49,Sam,sam@example.com,01632 960 999,KawnCodes/client-example-cafe,example.co.uk,cus_XXXX,2026-12-31,,,Founding? no
-example-pub,EXAMPLE Pub (delete me),plus,live,2026-12-01,2027-03-01,79,Alex,alex@example.com,01632 960 998,KawnCodes/client-example-pub,examplepub.co.uk,cus_YYYY,,,,
